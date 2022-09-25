@@ -37,17 +37,17 @@
     </header>
 
     <!-- main section starts here  -->
-    <main>
-        <section class="flex flex-row w-9/12 mx-auto gap-4">
-            <div class="basis-3/4">
+    <main class="bg-neutral-900">
+        <section class="flex flex-row w-9/12 mx-auto gap-4 divide-x divide-neutral-900">
+            <div class="basis-3/4 ">
                 <div class="mt-10 mb-40">
-                    <div class="grid grid-cols-3 gap-4 divide-x">
+                    <div class="grid grid-cols-3 gap-4">
                         <!-- All players -->
                         <!-- players-1 -->
                         <div class="">
-                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                            <div class="card rounded-none border border-base-400 w-full bg-base-100 shadow-xl">
                                 <img src="img/player1.png" alt="Shoes" />
-                                <div class="card-body text-center">
+                                <div class="card-body text-center bg-black text-white">
                                     <h2 class="text-2xl font-semibold">Lionel Messi</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
@@ -59,9 +59,9 @@
                         </div>
                         <!-- players-2 -->
                         <div class="">
-                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                            <div class="card rounded-none border border-base-400 w-full bg-base-100 shadow-xl">
                                 <img src="img/player2.png" alt="Shoes" />
-                                <div class="card-body text-center">
+                                <div class="card-body text-center bg-black text-white">
                                     <h2 class="text-2xl font-semibold">Neymar Jr</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
@@ -73,9 +73,9 @@
                         </div>
                         <!-- players-3 -->
                         <div class="">
-                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                            <div class="card rounded-none border border-base-400 w-full bg-base-100 shadow-xl">
                                 <img src="img/player3.png" alt="Shoes" />
-                                <div class="card-body text-center">
+                                <div class="card-body text-center bg-black text-white">
                                     <h2 class="text-2xl font-semibold">Kylian Mbappé</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
@@ -87,9 +87,9 @@
                         </div>
                         <!-- players-4 -->
                         <div class="">
-                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                            <div class="card rounded-none border border-base-400 w-full bg-base-100 shadow-xl">
                                 <img src="img/player4.png" alt="Shoes" />
-                                <div class="card-body text-center">
+                                <div class="card-body text-center bg-black text-white">
                                     <h2 class="text-2xl font-semibold">Vítor Machado</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
@@ -101,9 +101,9 @@
                         </div>
                         <!-- players-5 -->
                         <div class="">
-                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                            <div class="card rounded-none border border-base-400 w-full bg-base-100 shadow-xl">
                                 <img src="img/player5.png" alt="Shoes" />
-                                <div class="card-body text-center">
+                                <div class="card-body text-center bg-black text-white">
                                     <h2 class="text-2xl font-semibold">Sergio Ramos</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
@@ -115,9 +115,9 @@
                         </div>
                         <!-- players-6 -->
                         <div class="">
-                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                            <div class="card rounded-none border border-base-400 w-full bg-base-100 shadow-xl">
                                 <img src="img/player6.png" alt="Shoes" />
-                                <div class="card-body text-center">
+                                <div class="card-body text-center bg-black text-white">
                                     <h2 class="text-2xl font-semibold">Renato Sanches</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
@@ -133,20 +133,77 @@
 
             <!-- selected player section  -->
             <div class="basis-1/4 ">
-                <div class="mt-10 mb-40 ">
-                    <h2 class="text-center text-3xl font-semibold">Selected - V</h2>
-                    <img class="pl-8 ml-8" src="img/line-maker1.png" alt="">
+                <div class="grid grid-rows-2 grid-flow-col gap-4">
+                    <div class="mt-10 ">
+                        <h2 class="text-center text-white text-3xl font-semibold">Selected - V</h2>
+                        <img class="pl-8 ml-8 pb-8" src="img/line-maker1.png" alt="">
 
-                    <div class="overflow-x-auto">
-                        <table class="table w-full">
-                            <tbody>
-                                <!-- row 1 -->
-                                <tr>
-                                    <th>1</th>
-                                    <td>Lionel Messi</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="overflow-x-auto ">
+                            <table class="table w-full ">
+                                <tbody class="">
+                                    <!-- row 1 -->
+                                    <tr class="">
+                                        <th>1</th>
+                                        <td>Lionel Messi</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>1</th>
+                                        <td>Lionel Messi</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>1</th>
+                                        <td>Lionel Messi</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>1</th>
+                                        <td>Lionel Messi</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>1</th>
+                                        <td>Lionel Messi</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <h2 class="text-center text-white text-3xl font-semibold">Budget</h2>
+                        <img class="pl-8 ml-8 pb-6" src="img/line-maker1.png" alt="">
+
+                        <div class="overflow-x-auto text-center">
+                            <div class="mb-3 pt-2">
+                                <label for="per-player" class="text-white">Per Player</label>
+                                <input
+                                    class="w-4/12 ml-8 bg-black border border-2xl border-white input-white text-white px-2 py-1"
+                                    type="text" name="per-player" id="player">
+                            </div>
+                            <button
+                                class="btn btn-info rounded-none border text-white px-16 capitalize text-lg">Calculate</button>
+
+                            <h2 class="text-white text-lg font-semibold py-3 ">layer Expenses: $<span id="">5000</span>
+                            </h2>
+                            <div class="mb-3 pt-2">
+                                <label for="per-player" class="text-white">Manager</label>
+                                <input
+                                    class="w-4/12 ml-8 bg-black border border-2xl border-white input-white text-white px-2 py-1"
+                                    type="text" name="per-player" id="player">
+                            </div>
+                            <div class="mb-3 pt-2">
+                                <label for="per-player" class="text-white">Coach</label>
+                                <input
+                                    class="w-4/12 ml-8 bg-black border border-2xl border-white input-white text-white px-2 py-1"
+                                    type="text" name="per-player" id="player">
+                            </div>
+                            <button
+                                class="btn btn-info rounded-none border text-white px-10 capitalize text-lg">Calculate
+                                Total</button>
+
+                            <h2 class="text-white text-lg font-semibold py-3 ">Total: $<span id="">5000</span>
+                            </h2>
+
+                        </div>
                     </div>
 
                 </div>
@@ -156,18 +213,12 @@
     <!-- main section ends here  -->
 
     <!-- footer section starts here  -->
-    <footer>
-        <section class="bg-black">
-            <div class="mt-10">
-                <h2 class="text-center text-white ">Copyright @ 2022 All Rights Reserved.</h2>
-
-            </div>
-        </section>
+    <footer class="footer footer-center p-12 bg-neutral-900 border-t-2 border-base-400 ">
+        <div class="">
+            <p class="font-semibold text-xl text-white">Copyright @ 2022 All Rights Reserved.</p>
+        </div>
     </footer>
     <!-- footer section ends here  -->
-
-
-
 
     <script src="js/select.js"></script>
     <script src="js/budget.js"></script>
