@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <section class="bg-black ">
+        <section class="bg-black">
             <div class="flex gap-4 pt-16 ">
                 <div class="w-1/4">
                     <img class="" src="img/player.png" alt="">
@@ -38,100 +38,117 @@
 
     <!-- main section starts here  -->
     <main>
-        <section class="w-9/12 mx-auto mt-10 mb-40">
-            <div class="grid grid-cols-4 gap-4 divide-x">
-                <!-- All players -->
-                <!-- players-1 -->
-                <div class="">
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure><img src="img/player1.png" alt="Shoes" /></figure>
-                        <div class="card-body text-center">
-                            <h2 class="text-3xl font-semibold">Lionel Messi</h2>
-                            <p>36 Goals <span> ~ </span> 120 Assist</p>
-                            <div class="card-actions justify-center">
-                                <button class="btn btn-primary px-16">Buy Now</button>
+        <section class="flex flex-row w-9/12 mx-auto gap-4">
+            <div class="basis-3/4">
+                <div class="mt-10 mb-40">
+                    <div class="grid grid-cols-3 gap-4 divide-x">
+                        <!-- All players -->
+                        <!-- players-1 -->
+                        <div class="">
+                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                                <img src="img/player1.png" alt="Shoes" />
+                                <div class="card-body text-center">
+                                    <h2 class="text-2xl font-semibold">Lionel Messi</h2>
+                                    <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
+                                    <div class="card-actions justify-center">
+                                        <button
+                                            class="btn btn-info rounded-none border text-white px-16">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- players-2 -->
+                        <div class="">
+                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                                <img src="img/player2.png" alt="Shoes" />
+                                <div class="card-body text-center">
+                                    <h2 class="text-2xl font-semibold">Neymar Jr</h2>
+                                    <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
+                                    <div class="card-actions justify-center">
+                                        <button
+                                            class="btn btn-info rounded-none border text-white px-16">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- players-3 -->
+                        <div class="">
+                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                                <img src="img/player3.png" alt="Shoes" />
+                                <div class="card-body text-center">
+                                    <h2 class="text-2xl font-semibold">Kylian Mbappé</h2>
+                                    <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
+                                    <div class="card-actions justify-center">
+                                        <button
+                                            class="btn btn-info rounded-none border text-white px-16">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- players-4 -->
+                        <div class="">
+                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                                <img src="img/player4.png" alt="Shoes" />
+                                <div class="card-body text-center">
+                                    <h2 class="text-2xl font-semibold">Vítor Machado</h2>
+                                    <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
+                                    <div class="card-actions justify-center">
+                                        <button
+                                            class="btn btn-info rounded-none border text-white px-16">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- players-5 -->
+                        <div class="">
+                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                                <img src="img/player5.png" alt="Shoes" />
+                                <div class="card-body text-center">
+                                    <h2 class="text-2xl font-semibold">Sergio Ramos</h2>
+                                    <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
+                                    <div class="card-actions justify-center">
+                                        <button
+                                            class="btn btn-info rounded-none border text-white px-16">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- players-6 -->
+                        <div class="">
+                            <div class="card rounded-none border border-current w-full bg-base-100 shadow-xl">
+                                <img src="img/player6.png" alt="Shoes" />
+                                <div class="card-body text-center">
+                                    <h2 class="text-2xl font-semibold">Renato Sanches</h2>
+                                    <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
+                                    <div class="card-actions justify-center">
+                                        <button
+                                            class="btn btn-info rounded-none border text-white px-16">Select</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- players-2 -->
-                <div class="">
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure><img src="img/player2.png" alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
+            <!-- selected player section  -->
+            <div class="basis-1/4 ">
+                <div class="mt-10 mb-40 ">
+                    <h2 class="text-center text-3xl font-semibold">Selected - V</h2>
+                    <img class="pl-8 ml-8" src="img/line-maker1.png" alt="">
+
+                    <div class="overflow-x-auto">
+                        <table class="table w-full">
+                            <tbody>
+                                <!-- row 1 -->
+                                <tr>
+                                    <th>1</th>
+                                    <td>Lionel Messi</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
 
-                <!-- players-3 -->
-                <div class="">
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure><img src="img/player3.png" alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- players-4 -->
-                <div class="">
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure><img src="img/player4.png" alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- players-5 -->
-                <div class="">
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure><img src="img/player5.png" alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- players-6 -->
-                <div class="">
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure><img src="img/player6.png" alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- selected player section  -->
-                <div class="w-3/12 mx-auto">
-                    <div>
-                        <h2>Selected - V</h2>
-                        <img src="" alt="">
-
-                    </div>
                 </div>
             </div>
         </section>
