@@ -1,10 +1,9 @@
 const playerArray = [];
 
-function display(selectedTable) {
+function display() {
 
     const tableBody = document.getElementById('selected-table');
     tableBody.innerHTML = '';
-
 
     for (let i = 0; i < 5; i++) {
 
