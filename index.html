@@ -51,7 +51,7 @@
                                     <h2 class="text-2xl font-semibold">Lionel Messi</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button
+                                        <button onclick="addToTable(this)" id="button"
                                             class="btn btn-info rounded-none border text-white px-16">Select</button>
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@
                                     <h2 class="text-2xl font-semibold">Neymar Jr</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button
+                                        <button onclick="addToTable(this)" id="button"
                                             class="btn btn-info rounded-none border text-white px-16">Select</button>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@
                                     <h2 class="text-2xl font-semibold">Kylian Mbappé</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button
+                                        <button onclick="addToTable(this)" id="button"
                                             class="btn btn-info rounded-none border text-white px-16">Select</button>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@
                                     <h2 class="text-2xl font-semibold">Vítor Machado</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button
+                                        <button onclick="addToTable(this)" id="button"
                                             class="btn btn-info rounded-none border text-white px-16">Select</button>
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@
                                     <h2 class="text-2xl font-semibold">Sergio Ramos</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button
+                                        <button onclick="addToTable(this)" id="button"
                                             class="btn btn-info rounded-none border text-white px-16">Select</button>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@
                                     <h2 class="text-2xl font-semibold">Renato Sanches</h2>
                                     <p class="font-semibold">36 Goals <span> ~ </span> 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button
+                                        <button onclick="addToTable(this)" id="button"
                                             class="btn btn-info rounded-none border text-white px-16">Select</button>
                                     </div>
                                 </div>
@@ -138,36 +138,29 @@
                         <h2 class="text-center text-white text-3xl font-semibold">Selected - V</h2>
                         <img class="pl-8 ml-8 pb-8" src="img/line-maker1.png" alt="">
 
-                        <div class="overflow-x-auto ">
-                            <table class="table w-full ">
-                                <tbody class="">
-                                    <!-- row 1 -->
-                                    <tr class="">
-                                        <th>1</th>
-                                        <td>Lionel Messi</td>
-                                    </tr>
-                                    <tr class="">
-                                        <th>1</th>
-                                        <td>Lionel Messi</td>
-                                    </tr>
-                                    <tr class="">
-                                        <th>1</th>
-                                        <td>Lionel Messi</td>
-                                    </tr>
-                                    <tr class="">
-                                        <th>1</th>
-                                        <td>Lionel Messi</td>
-                                    </tr>
-                                    <tr class="">
-                                        <th>1</th>
-                                        <td>Lionel Messi</td>
+                        <div class="overflow-x-auto">
+                            <table class="table w-full h-2.5">
+                                <!-- head -->
+                                <!-- <thead>
+                                    <tr class="text-white ">
+                                        <th class="bg-black font-normal text-base">1.</th>
+                                        <td class="bg-black font-normal text-base capitalize bg-black">Lionel
+                                            Messi</td>
                                     </tr>
 
+                                </thead> -->
+                                <tbody id="selected-table">
+                                    <!-- row 1 -->
+                                    <!-- <tr>
+                                        <th>1.</th>
+                                        <td>Lionel Messi</td>
+                                     </tr> -->
                                 </tbody>
                             </table>
                         </div>
                     </div>
 
+                    <!-- budget section -->
                     <div class="">
                         <h2 class="text-center text-white text-3xl font-semibold">Budget</h2>
                         <img class="pl-8 ml-8 pb-6" src="img/line-maker1.png" alt="">
@@ -179,7 +172,7 @@
                                     class="w-4/12 ml-8 bg-black border border-2xl border-white input-white text-white px-2 py-1"
                                     type="text" name="per-player" id="player">
                             </div>
-                            <button
+                            <button id="calculate-btn"
                                 class="btn btn-info rounded-none border text-white px-16 capitalize text-lg">Calculate</button>
 
                             <h2 class="text-white text-lg font-semibold py-3 ">layer Expenses: $<span id="">5000</span>
@@ -205,7 +198,6 @@
 
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -220,6 +212,7 @@
     </footer>
     <!-- footer section ends here  -->
 
+    <script src="js/utilities.js"></script>
     <script src="js/select.js"></script>
     <script src="js/budget.js"></script>
 </body>
